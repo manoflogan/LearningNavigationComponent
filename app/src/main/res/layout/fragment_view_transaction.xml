@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <!-- Food -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Food"
+        android:id="@+id/title_food"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="28sp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$300"
+        android:id="@+id/value_food"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/title_food"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        android:textSize="28sp"
+        />
+    <!-- End Food -->
+
+    <!-- Data -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Data"
+        android:id="@+id/title_data"
+        app:layout_constraintTop_toBottomOf="@id/title_food"
+        app:layout_constraintStart_toStartOf="@id/title_food"
+        android:textSize="28sp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$200"
+        android:id="@+id/value_data"
+        app:layout_constraintTop_toBottomOf="@id/value_food"
+        app:layout_constraintStart_toStartOf="@+id/title_data"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="28sp"
+        />
+    <!-- End Data -->
+
+    <!-- Rent -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rent"
+        android:id="@+id/title_rent"
+        app:layout_constraintTop_toBottomOf="@id/title_data"
+        app:layout_constraintStart_toStartOf="@id/title_data"
+        android:textSize="28sp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$200"
+        android:id="@+id/value_rent"
+        app:layout_constraintTop_toBottomOf="@id/value_data"
+        app:layout_constraintStart_toStartOf="@+id/title_rent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="28sp"
+        />
+    <!-- End Rent -->
+
+
+    <!-- Candles -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Candles"
+        android:id="@+id/title_candles"
+        app:layout_constraintTop_toBottomOf="@id/title_rent"
+        app:layout_constraintStart_toStartOf="@id/title_rent"
+        android:textSize="28sp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$3600"
+        android:id="@+id/value_candles"
+        app:layout_constraintTop_toBottomOf="@id/value_rent"
+        app:layout_constraintStart_toStartOf="@+id/title_candles"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="28sp"
+        />
+    <!-- End Candles -->
+
+    <!-- Utility -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Utility"
+        android:id="@+id/title_utility"
+        app:layout_constraintTop_toBottomOf="@id/title_candles"
+        app:layout_constraintStart_toStartOf="@id/title_candles"
+        android:textSize="28sp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$150"
+        android:id="@+id/value_utility"
+        app:layout_constraintTop_toBottomOf="@id/value_candles"
+        app:layout_constraintStart_toStartOf="@+id/title_utility"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="28sp"
+        />
+    <!-- End Utility -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
