@@ -11,6 +11,7 @@ import androidx.core.os.bundleOf
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
 import kotlinx.android.synthetic.main.fragment_specify_amount.*
+import java.math.BigDecimal
 
 class SpecifyAmountFragment : Fragment(), View.OnClickListener {
 
@@ -38,7 +39,7 @@ class SpecifyAmountFragment : Fragment(), View.OnClickListener {
             R.id.send_btn -> {
                 val amount = input_amount.text.toString()
                 val bundle = if (!TextUtils.isEmpty(recipient) && !TextUtils.isEmpty(amount)) {
-                    bundleOf("recipient" to recipient, "amount" to amount)
+                    bundleOf("recipient" to recipient, "amount" to Money(BigDecimal(amount)))
                 } else {
                     bundleOf()
                 }

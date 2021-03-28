@@ -20,7 +20,7 @@ class ConfirmationFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         arguments ?: return
         val recipient: String = arguments?.getString("recipient", "") ?: ""
-        val amount : BigDecimal = (arguments?.getString("amount", "0.00") ?: "0.00").toBigDecimal()
-        confirmation_message.text = "${amount} USD was sent to ${recipient}"
+        val amount : Money = arguments?.getParcelable<Money>("amount") ?: Money(BigDecimal(0.00))
+        confirmation_message.text = "${amount.amount} USD was sent to ${recipient}"
     }
 }
